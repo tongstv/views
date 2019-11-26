@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Sim Vip - Sim doanh nhân</title>
+	<link href="css/layout.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+	<script src="js/main.js"></script>
+</head>
+<body class="">
+	<header id="head" class="header">
+		<div class="header-wrap">
+			<div class="container">
+				<div class="row">
+					<!-- nut menu mobile -->
+					<div id="btn-open-menu" class="open-menu">
+						<i class="sprite-icon-open-menu"></i>
+					</div>
+					<div class="header-search-group">
+						<!-- logo -->
+						<div class="header-logo">
+							<!-- logo desktop -->
+							<a class="header-logo--pc" href="index.html"><img src="images/logo.png" alt=""></a>
+							<!-- logo mobile -->
+							<a class="header-logo--mobile" href="index.html"><img src="images/logo_mobile.png" alt=""></a>
+						</div>
+						<!-- #logo -->
+						<!-- form search -->
+						<div class="header-form-search">
+							<form id="search" method="post">
+								<input id="key" type="tel" autocomplete="off" name="search-number" placeholder="Bạn tìm sim gì hôm nay">
+								<div id="popover" class="popover">
+									<div class="arrow"></div>
+									<h3 class="popover-title">Hướng dẫn tìm sim</h3>
+									<div class="popover-content">
+										- Sử dụng dấu <span class="red">*</span> đại điện cho một chuỗi số. <br>
+										- Để tìm sim bắt đầu bằng 098, quý khách nhập vào 098*<br>
+										- Để tìm sim kết thúc bằng 888, quý khách nhập vào *888<br>
+										- Để tìm sim bắt đầu bằng 098 và kết thúc bằng 888, nhập vào 098*888<br>
+										- Để tìm sim bên trong có số 888, nhập vào 888<br>
+									</div>		
+								</div>		
+								<input type="submit" name="submit" value="">
+							</form>
+						</div>
+						<!-- #form-search -->
+					</div>
+					<!-- menu -->
+					<div class="header-menu d-none d-md-block">
+						<ul>
+						    <li class="has-child">
+						    	<a class="icon icon-home" href="index.html">Trang chủ</a>
+						    	<ul class="child-list">
+						    	    <li><a href="danh-muc.html">Sim Vip</a></li>
+						    	    <li><a href="sim-luc-quy.html">Sim Lục quý</a></li>
+						    	    <li><a href="sim-luc-quy-giua.html">Sim Lục quý giữa</a></li>
+						    	    <li><a href="sim-ngu-quy.html">Sim ngũ quý</a></li>
+						    	    <li><a href="sim-ngu-quy-giua.html">Sim ngũ quý giữa</a></li>
+						    	    <li><a href="sim-tu-quy.html">Sim Tứ quý</a></li>
+						    	    <li><a href="sim-tu-quy-giua.html">Sim tứ quý giữa</a></li>
+						    	    <li><a href="sim-tam-hoa.html">Sim Tam hoa</a></li>
+						    	    <li><a href="sim-tam-hoa-kep.html">Sim tam hoa kép</a></li>
+						    	    <li><a href="sim-taxi.html">Sim Taxi</a></li>
+						    	    <li><a href="sim-loc-phat.html">Sim Lộc phát</a></li>
+						    	    <li><a href="sim-than-tai.html">Sim Thần tài</a></li>
+						    	    <li><a href="sim-ong-dia.html">Sim Ông địa</a></li>
+						    	    <li><a href="sim-lap-kep.html">Sim Lặp kép</a></li>
+						    	    <li><a href="sim-ganh-dao.html">Sim Gánh đảo</a></li>
+						    	    <li><a href="sim-tien-len.html">Sim Tiến lên</a></li>
+						    	    <li><a href="sim-de-nho.html">Sim Dễ nhớ</a></li>
+						    	    <li><a href="sim-nam-sinh.html">Sim Năm sinh</a></li>
+						    	    <li><a href="sim-so-doc.html">Sim Số độc</a></li>
+						    	    <li><a href="sim-dau-so-co.html">Sim đầu số cổ</a></li>
+						    	    <li><a href="sim-luc-quy.html">Sim Trả Góp</a></li>
+						    	</ul>
+						    </li>
+						    <li><a class="icon icon-viettel" href="thanh-toan.html">thanh toán</a></li>
+						    <li><a class="icon icon-vinaphone" href="lien-he.html">liên hệ</a></li>
+						    <li><a class="icon icon-mobifone" href="thu-mua-sim.html">thu mua sim</a></li>
+						    <li><a class="icon icon-gmobile" href="cam-co-sim.html">cầm cố sim</a></li>
+						    <li><a class="icon icon-vietnamobile" href="sim-thanh-ly.html">sim thanh lý</a></li>
+						    <li><a class="icon icon-vietnamobile" href="sim-vietnamobile.html">sim phong thủy</a></li>
+						    <li><a class="icon icon-news" href="tin-tuc.html">tin tức</a></li>
+						</ul>
+					</div>
+					<!-- #menu -->
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- main content -->
+	<div class="main-content">
+		<div class="container">
+			<div class="row">
+				<div class="page">
+					<div class="row">
+						<div class="page--left col-lg-8">
+							<!-- post detail -->
+							<div class="cat-link"><a href="#">Cách chọn sim</a></div>
+							<h1 class="post-detail-title">Làm thế nào để lựa chọn đầu số đẹp cho sim Lặp Kép?</h1>
+
+							<div class="post-meta">
+								<span class="posted-on">
+									<a href="#">
+										<time class="entry-date published" datetime="2019-04-12T14:30:55+00:00">Tháng Tư 12, 2019</time>
+									</a>
+								</span>
+								<span class="post-meta--step"> - </span>
+								<span class="post-meta--author">by <a href="#">Khánh Duy</a></span>
+								<span class="post-meta--step"> - </span>
+								<span class="post-meta--commentLinks"><a href="#">Leave a Comment</a></span>
+							</div>
+							<!-- nội dung bài viết -->
+							<div class="post-detail">
+
+								<p>
+									Sim Tam Hoa là dòng sim thông dụng và được rất nhiều người quan tâm và có mong muốn được sở hữu không chỉ bởi độ đẹp, dễ nhớ mà mức giá còn phải chăng. Thế nhưng không phải ai cũng nắm rõ được mức giá mới nhất của dòng sim này để có thể chuẩn bị tài chính tốt nhất khi quyết định mua.
+								</p>
+								<p>
+									Vậy nên, trong bài viết hôm nay TOPSIM.vn sẽ giúp bạn khảo sát mức giá mới nhất của dòng sim Tam Hoa này. Mời bạn cùng tham khảo nhé!
+								</p>
+								<!-- khung thành phần -->
+								<div id="part" class="">
+									<p class="part-title">Nội dung chính </p>
+									<ul class="part-list">
+										<li>
+											<a href="#p1">1. Lý do khiến nhiều người sở hữu sim Tam Hoa</a>
+											<ul>
+												<li><a href="#p1.1">a. Tam hoa mang lại may mắn cho chủ nhân</a></li>
+												<li><a href="#p1.2">b. Giúp chủ nhân tự tin và khẳng định vị thế trong cuộc sống</a></li>
+												<li><a href="#p1.3">c. Sim tam hoa giúp sự nghiệp thăng tiến không ngừng</a></li>
+											</ul>
+										</li>
+										
+										<li>
+											<a href="#p2">2. Vậy sim Tam Hoa có đắt không?</a>
+										</li>
+										<li>
+											<a href="#p3">3. Khảo sát mức giá sim Tam Hoa mới nhất</a>
+											<ul>
+												<li><a href="#p3.1">a. Tam hoa mang lại may mắn cho chủ nhân</a></li>
+												<li><a href="#p3.2">b. Giúp chủ nhân tự tin và khẳng định vị thế trong cuộc sống</a></li>
+												<li><a href="#p3.3">c. Sim tam hoa giúp sự nghiệp thăng tiến không ngừng</a></li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+
+								<h2 id="p1">1. Lý do khiến nhiều người sở hữu sim Tam Hoa</h2>
+								<img src="images/sim-tam-hoa.png" alt="">
+								<h3 id="p1.1">a. Tam hoa mang lại may mắn cho chủ nhân</h3>
+								<p>
+									Ý nghĩa sim tam hoa không chỉ mang lại may mắn trong sự nghiệp, cuộc sống mà dòng sim số đẹp này còn thể hiện phong cách và đẳng cấp của chủ sở hữu.
+								</p>
+								<h3 id="p1.2">b. Giúp chủ nhân tự tin và khẳng định vị thế trong cuộc sống</h3>
+								<p>
+									Sở hữu sim tam hoa, chắc chắn là bạn sẽ luôn cảm thấy tự tin vào chính mình, tự tin trong những buổi thương thuyết, ký hợp đồng cũng như đưa ra những chiến lược kinh doanh và đầu tư đúng đắn, mang về nhiều lợi nhuận. Dòng sim số đẹp tam hoa này giúp khẳng định vị thế cũng như phong độ của bạn trong các mối quan hệ xã hội  hay quan hệ công việc làm ăn.
+								</p>
+								<h3>c. Sim tam hoa giúp sự nghiệp thăng tiến không ngừng</h3>
+								<p>
+									Nếu bạn chọn đúng số sim đẹp hợp phong thủy sẽ giúp chủ sở hữu gặp vận may, mọi sự suôn sẻ, sự nghiệp thăng tiến không ngừng, phát lộc và gặt hái được những điều mong muốn. Trong đó, sim tam hoa kép có giá trị hơn sim tam hoa đơn bởi vì sim tam hoa kép được quan niệm rằng có khả năng tăng gấp đôi thành công và may mắn lên gấp đôi.
+								</p>
+								<h2>2. Vậy sim Tam Hoa có đắt không?</h2>
+								<img src="images/cach-chon-sim.png" alt="">
+								<p>
+									Sim Tam Hoa thuộc dạng sim có các chữ số lặp xuất hiện trong dãy số, dòng sim này được lựa chọn như một chiếc sim số dễ nhớ, giúp tạo được sự chú ý cho người gọi điện. Không chỉ đẹp, giá sim tam hoa còn khá phong phú, từ mức rẻ cho đến mức cao nên có thể làm hài lòng tất cả mục đích và yêu cầu sử dụng cơ bản của người dùng.
+								</p>
+								<p>
+									Tuy chỉ với 3 chữ số lặp, sim tam hoa có chữ số lặp ít nhất so với các dạng sim chữ “quý” khác như sim tứ quý, sim ngũ quý và sim lục quý,… Tuy nhiên, không phải vì thế mà dòng sim tam hoa này lại tỏ ra thua kém bởi nó còn chứa đựng đầy đủ ý nghĩa phong thủy như các dạng sim chữ “quý” khác.
+								</p>
+								<h2>3. Khảo sát mức giá sim Tam Hoa mới nhất</h2>
+								<p>
+									Với dòng sim này thường thì mức giá còn phụ thuộc vào rất nhiều yếu tố như: đầu số, dãy tam hoa, … cụ thể như sau:
+								</p>
+								<p>
+									Những yếu tố trên sẽ góp phần quyết định giá của một chiếc sim Tam Hoa. Ngoài ra, những dãy tam hoa có chứa những bộ số như: 444, 777 sẽ có mức giá mềm hơn rất nhiều, vậy nên khi lựa chọn bạn cũng nên chú ý tới những yếu tố này để có thể lựa chọn cho mình một số sim phù hợp nhất nhé.
+								</p>
+
+							</div>
+							<!-- #post detail -->
+							<!-- author box -->
+							<div class="author">
+								<div class="author-img">
+									<img src="images/author.png" alt="">
+								</div>
+								<div class="author-content">
+									<h4 class="author-name">About Khánh Duy</h4>
+									<p class="author-description">
+										Khánh Duy với kinh nghiệm 7 năm về Copywriter, SEOer, Marketing Manager...qua nhiều dịch vụ, sản phẩm trong và ngoài nước và 5 năm kinh nghiệm trong ngành sim số đẹp, sim phong thủy
+									</p>
+									<a href="#" class="author--posts-link">View all posts by Khánh Duy → </a>
+								</div>
+							</div>
+							<!-- related post -->
+							<div class="widget">
+								<div class="widget--head">
+									<h4 class="title">RELATED POSTS</h4>
+									<a href="#" class="view-all"><span>Xem thêm</span></a>
+								</div>
+								<div class="row">
+									<div class="col-md-4 post-grid">
+										<div class="thumb">
+											<a href="#" title="Bạn đã biết cách mua thêm dung lượng 4G Viettel cho mình chưa?">
+												<img src="images/post7.png" alt="Bạn đã biết cách mua thêm dung lượng 4G Viettel cho mình chưa?">
+											</a>
+										</div>
+										<div class="detail">
+											<h3 class="title"><a href="#">Bạn đã biết cách mua thêm dung lượng 4G Viettel cho mình chưa?</a></h3>
+											<div class="meta">
+												<span><time class="entry-date published" datetime="2019-04-12T14:30:55+00:00">Tháng Tư 12, 2019</time></span>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-4 post-grid">
+										<div class="thumb">
+											<a href="#" title="Lợi ích thực sự từ những gói cước khuyến mãi của các nhà mạng">
+												<img src="images/post8.png" alt="Lợi ích thực sự từ những gói cước khuyến mãi của các nhà mạng">
+											</a>
+										</div>
+										<div class="detail">
+											<h3 class="title"><a href="#">Lợi ích thực sự từ những gói cước khuyến mãi của các nhà mạng</a></h3>
+											<div class="meta">
+												<span><time class="entry-date published" datetime="2019-04-12T14:30:55+00:00">Tháng Tư 12, 2019</time></span>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-4 post-grid">
+										<div class="thumb">
+											<a href="#" title="TOP 3 gói 4G giá “siêu rẻ”, lên tới 5GB dành cho “fan Liên Quân”">
+												<img src="images/post9.png" alt="TOP 3 gói 4G giá “siêu rẻ”, lên tới 5GB dành cho “fan Liên Quân”">
+											</a>
+										</div>
+										<div class="detail">
+											<h3 class="title"><a href="#">TOP 3 gói 4G giá “siêu rẻ”, lên tới 5GB dành cho “fan Liên Quân”</a></h3>
+											<div class="meta">
+												<span><time class="entry-date published" datetime="2019-04-12T14:30:55+00:00">Tháng Tư 12, 2019</time></span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="page--right col-lg-4">
+
+							<!-- panel -->
+							<div class="panel panel-orange">
+								<div class="panel-header">SIM THEO GIÁ</div>
+								<div class="panel-content">
+									<ul class="sitebar-list">
+										<li><a href="danh-muc.html">Dưới 500 nghìn</a></li>
+										<li><a href="danh-muc.html">Sim 500 - 1 triệu</a></li>
+										<li><a href="danh-muc.html">Sim 1 - 3 triệu</a></li>
+										<li><a href="danh-muc.html">Sim 3 - 5 triệu</a></li>
+										<li><a href="danh-muc.html">Sim 5 - 10 triệu</a></li>
+										<li><a href="danh-muc.html">Sim 10 - 50 triệu</a></li>
+										<li><a href="danh-muc.html">Sim 50 - 100 triệu</a></li>
+										<li><a href="danh-muc.html">Sim 100 - 200 triệu</a></li>
+										<li><a href="danh-muc.html">Sim trên 200 triệu</a></li>
+									</ul>
+								</div>
+							</div>
+							
+							<!-- panel -->
+							<div class="panel panel-orange">
+								<div class="panel-header">SIM THEO MẠNG</div>
+								<div class="panel-content">
+									<ul class="sitebar-list">
+										<li><a href="danh-muc.html">Sim Viettel</a></li>
+										<li><a href="danh-muc.html">Sim Vinaphone</a></li>
+										<li><a href="danh-muc.html">Sim Mobifone</a></li>
+										<li><a href="danh-muc.html">Sim Vietnamobile</a></li>
+										<li><a href="danh-muc.html">Sim Gmobile</a></li>
+										<li><a href="danh-muc.html">Sim Itelecom</a></li>
+									</ul>
+								</div>
+							</div>
+
+							<!-- panel -->
+							<div class="panel panel-orange">
+								<div class="panel-header">SIM THEO LOẠI</div>
+								<div class="panel-content">
+									<ul class="sitebar-list">
+										<li><a href="danh-muc.html">Sim VIP</a></li>
+										<li><a href="danh-muc.html">Sim Lục quý</a></li>
+										<li><a href="danh-muc.html">Sim Lục quý giữa</a></li>
+										<li><a href="danh-muc.html">Sim ngũ quý</a></li>
+										<li><a href="danh-muc.html">Sim ngũ quý giữa</a></li>
+										<li><a href="danh-muc.html">Sim Tứ quý</a></li>
+										<li><a href="danh-muc.html">Sim tứ quý giữa</a></li>
+										<li><a href="danh-muc.html">Sim Tam hoa</a></li>
+										<li><a href="danh-muc.html">Sim tam hoa kép</a></li>
+										<li><a href="danh-muc.html">Sim Taxi</a></li>
+										<li><a href="danh-muc.html">Sim Lộc phát</a></li>
+										<li><a href="danh-muc.html">Sim Thần tài</a></li>
+										<li><a href="danh-muc.html">Sim Ông địa</a></li>
+										<li><a href="danh-muc.html">Sim Lặp kép</a></li>
+										<li><a href="danh-muc.html">Sim Gánh đảo</a></li>
+										<li><a href="danh-muc.html">Sim Tiến lên</a></li>
+										<li><a href="danh-muc.html">Sim Dễ nhớ</a></li>
+										<li><a href="danh-muc.html">Sim Năm sinh</a></li>
+										<li><a href="danh-muc.html">Sim Số độc</a></li>
+										<li><a href="danh-muc.html">Sim đầu số cổ</a></li>
+										<li><a href="danh-muc.html">Sim Tự chọn</a></li>
+										<li><a href="danh-muc.html">Sim Trả góp</a></li>
+									</ul>
+								</div>
+							</div>
+							<!-- widget -->
+							<div class="widget">
+								<div class="widget--head">
+									<h4 class="title">bài viết mới </h4>
+								</div>
+								<div class="post-sm-item">
+									<div class="thumb">
+										<a href="noi-dung.html" title="Vì sao người thành đạt luôn thích dùng sim chứa nhiều số 9?">
+											<img src="images/post13.png" alt="Vì sao người thành đạt luôn thích dùng sim chứa nhiều số 9?">
+										</a>
+									</div>
+									<div class="detail">
+										<h3 class="title"><a href="noi-dung.html">Vì sao người thành đạt luôn thích dùng sim chứa nhiều số 9?</a></h3>
+										<div class="meta">
+											<span><time class="entry-date published" datetime="2019-04-12T14:30:55+00:00">Tháng Tư 12, 2019</time></span>
+										</div>
+									</div>
+								</div>
+								<div class="post-sm-item">
+									<div class="thumb">
+										<a href="noi-dung.html" title="Mạng 4G Mobifone không vào được – Phải làm sao?">
+											<img src="images/news1.png" alt="Mạng 4G Mobifone không vào được – Phải làm sao?">
+										</a>
+									</div>
+									<div class="detail">
+										<h3 class="title"><a href="noi-dung.html">Mạng 4G Mobifone không vào được – Phải làm sao?</a></h3>
+										<div class="meta">
+											<span><time class="entry-date published" datetime="2019-04-12T14:30:55+00:00">Tháng Tư 12, 2019</time></span>
+										</div>
+									</div>
+								</div>
+								<div class="post-sm-item">
+									<div class="thumb">
+										<a href="noi-dung.html" title="Bạn đã biết cách mua thêm dung lượng 4G Viettel cho mình chưa?">
+											<img src="images/post7.png" alt="Bạn đã biết cách mua thêm dung lượng 4G Viettel cho mình chưa?">
+										</a>
+									</div>
+									<div class="detail">
+										<h3 class="title"><a href="noi-dung.html">Bạn đã biết cách mua thêm dung lượng 4G Viettel cho mình chưa?</a></h3>
+										<div class="meta">
+											<span><time class="entry-date published" datetime="2019-04-12T14:30:55+00:00">Tháng Tư 12, 2019</time></span>
+										</div>
+									</div>
+								</div>
+								<div class="post-sm-item">
+									<div class="thumb">
+										<a href="noi-dung.html" title="Dòng sim nào khiến “giới sành chơi sim” chao đảo năm 2019">
+											<img src="images/news3.png" alt="Dòng sim nào khiến “giới sành chơi sim” chao đảo năm 2019">
+										</a>
+									</div>
+									<div class="detail">
+										<h3 class="title"><a href="noi-dung.html">Dòng sim nào khiến “giới sành chơi sim” chao đảo năm 2019</a></h3>
+										<div class="meta">
+											<span><time class="entry-date published" datetime="2019-04-12T14:30:55+00:00">Tháng Tư 12, 2019</time></span>
+										</div>
+									</div>
+								</div>
+								<div class="post-sm-item">
+									<div class="thumb">
+										<a href="noi-dung.html" title="Lợi ích thực sự từ những gói cước khuyến mãi của các nhà mạng">
+											<img src="images/post8.png" alt="Lợi ích thực sự từ những gói cước khuyến mãi của các nhà mạng">
+										</a>
+									</div>
+									<div class="detail">
+										<h3 class="title"><a href="noi-dung.html">Lợi ích thực sự từ những gói cước khuyến mãi của các nhà mạng</a></h3>
+										<div class="meta">
+											<span><time class="entry-date published" datetime="2019-04-12T14:30:55+00:00">Tháng Tư 12, 2019</time></span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- tabs -->
+							<div class="toggle">
+								<ul class="tabs">
+									<li class="active"><a class="tab" href="#tab1">Populars</a></li>
+									<li><a class="tab" href="#tab2">Comments</a></li>
+								</ul>
+								<div class='tabs-contents'>
+									<div class='tabs-content active' id="tab1">
+										
+										<div class="post-sm-item">
+											<div class="thumb">
+												<a href="noi-dung.html" title="Vì sao người thành đạt luôn thích dùng sim chứa nhiều số 9?">
+													<img src="images/post13.png" alt="Vì sao người thành đạt luôn thích dùng sim chứa nhiều số 9?">
+												</a>
+											</div>
+											<div class="detail">
+												<h3 class="title"><a href="noi-dung.html">Vì sao người thành đạt luôn thích dùng sim chứa nhiều số 9?</a></h3>
+												<div class="meta">
+													<span><time class="entry-date published" datetime="2019-04-12T14:30:55+00:00">Tháng Tư 12, 2019</time></span>
+												</div>
+											</div>
+										</div>
+										<div class="post-sm-item">
+											<div class="thumb">
+												<a href="noi-dung.html" title="Mạng 4G Mobifone không vào được – Phải làm sao?">
+													<img src="images/news1.png" alt="Mạng 4G Mobifone không vào được – Phải làm sao?">
+												</a>
+											</div>
+											<div class="detail">
+												<h3 class="title"><a href="noi-dung.html">Mạng 4G Mobifone không vào được – Phải làm sao?</a></h3>
+												<div class="meta">
+													<span><time class="entry-date published" datetime="2019-04-12T14:30:55+00:00">Tháng Tư 12, 2019</time></span>
+												</div>
+											</div>
+										</div>
+										<div class="post-sm-item">
+											<div class="thumb">
+												<a href="noi-dung.html" title="Bạn đã biết cách mua thêm dung lượng 4G Viettel cho mình chưa?">
+													<img src="images/post7.png" alt="Bạn đã biết cách mua thêm dung lượng 4G Viettel cho mình chưa?">
+												</a>
+											</div>
+											<div class="detail">
+												<h3 class="title"><a href="noi-dung.html">Bạn đã biết cách mua thêm dung lượng 4G Viettel cho mình chưa?</a></h3>
+												<div class="meta">
+													<span><time class="entry-date published" datetime="2019-04-12T14:30:55+00:00">Tháng Tư 12, 2019</time></span>
+												</div>
+											</div>
+										</div>
+										<div class="post-sm-item">
+											<div class="thumb">
+												<a href="noi-dung.html" title="Dòng sim nào khiến “giới sành chơi sim” chao đảo năm 2019">
+													<img src="images/news3.png" alt="Dòng sim nào khiến “giới sành chơi sim” chao đảo năm 2019">
+												</a>
+											</div>
+											<div class="detail">
+												<h3 class="title"><a href="noi-dung.html">Dòng sim nào khiến “giới sành chơi sim” chao đảo năm 2019</a></h3>
+												<div class="meta">
+													<span><time class="entry-date published" datetime="2019-04-12T14:30:55+00:00">Tháng Tư 12, 2019</time></span>
+												</div>
+											</div>
+										</div>
+										<div class="post-sm-item">
+											<div class="thumb">
+												<a href="noi-dung.html" title="Lợi ích thực sự từ những gói cước khuyến mãi của các nhà mạng">
+													<img src="images/post8.png" alt="Lợi ích thực sự từ những gói cước khuyến mãi của các nhà mạng">
+												</a>
+											</div>
+											<div class="detail">
+												<h3 class="title"><a href="noi-dung.html">Lợi ích thực sự từ những gói cước khuyến mãi của các nhà mạng</a></h3>
+												<div class="meta">
+													<span><time class="entry-date published" datetime="2019-04-12T14:30:55+00:00">Tháng Tư 12, 2019</time></span>
+												</div>
+											</div>
+										</div>
+										
+									</div>
+									<div class='tabs-content' id="tab2">
+										<div class="comment">
+											<div class="avatar">
+												<a href="#"><img src="images/avar.png" alt=""></a>
+											</div>
+											<div class="comment-text">
+												<a href="#">
+													<span class="cmt-post">Thế nào là sim số đẹp? Những lợi ích mà sim số đẹp mang lại</span>
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- widget -->
+							<div class="widget">
+								<div class="widget--head">
+									<h4 class="title">tin hot </h4>
+								</div>
+								<div class="post-sm-item">
+									<div class="thumb">
+										<a href="#" title="Vì sao người thành đạt luôn thích dùng sim chứa nhiều số 9?">
+											<img src="images/post13.png" alt="Vì sao người thành đạt luôn thích dùng sim chứa nhiều số 9?">
+										</a>
+									</div>
+									<div class="detail">
+										<h3 class="title"><a href="#">Vì sao người thành đạt luôn thích dùng sim chứa nhiều số 9?</a></h3>
+										<div class="meta">
+											<span><time class="entry-date published" datetime="2019-04-12T14:30:55+00:00">Tháng Tư 12, 2019</time></span>
+										</div>
+									</div>
+								</div>
+								<div class="post-sm-item">
+									<div class="thumb">
+										<a href="#" title="Mạng 4G Mobifone không vào được – Phải làm sao?">
+											<img src="images/news1.png" alt="Mạng 4G Mobifone không vào được – Phải làm sao?">
+										</a>
+									</div>
+									<div class="detail">
+										<h3 class="title"><a href="#">Mạng 4G Mobifone không vào được – Phải làm sao?</a></h3>
+										<div class="meta">
+											<span><time class="entry-date published" datetime="2019-04-12T14:30:55+00:00">Tháng Tư 12, 2019</time></span>
+										</div>
+									</div>
+								</div>
+								<div class="post-sm-item">
+									<div class="thumb">
+										<a href="#" title="Bạn đã biết cách mua thêm dung lượng 4G Viettel cho mình chưa?">
+											<img src="images/post7.png" alt="Bạn đã biết cách mua thêm dung lượng 4G Viettel cho mình chưa?">
+										</a>
+									</div>
+									<div class="detail">
+										<h3 class="title"><a href="#">Bạn đã biết cách mua thêm dung lượng 4G Viettel cho mình chưa?</a></h3>
+										<div class="meta">
+											<span><time class="entry-date published" datetime="2019-04-12T14:30:55+00:00">Tháng Tư 12, 2019</time></span>
+										</div>
+									</div>
+								</div>
+								<div class="post-sm-item">
+									<div class="thumb">
+										<a href="#" title="Dòng sim nào khiến “giới sành chơi sim” chao đảo năm 2019">
+											<img src="images/news3.png" alt="Dòng sim nào khiến “giới sành chơi sim” chao đảo năm 2019">
+										</a>
+									</div>
+									<div class="detail">
+										<h3 class="title"><a href="#">Dòng sim nào khiến “giới sành chơi sim” chao đảo năm 2019</a></h3>
+										<div class="meta">
+											<span><time class="entry-date published" datetime="2019-04-12T14:30:55+00:00">Tháng Tư 12, 2019</time></span>
+										</div>
+									</div>
+								</div>
+								<div class="post-sm-item">
+									<div class="thumb">
+										<a href="#" title="Lợi ích thực sự từ những gói cước khuyến mãi của các nhà mạng">
+											<img src="images/post8.png" alt="Lợi ích thực sự từ những gói cước khuyến mãi của các nhà mạng">
+										</a>
+									</div>
+									<div class="detail">
+										<h3 class="title"><a href="#">Lợi ích thực sự từ những gói cước khuyến mãi của các nhà mạng</a></h3>
+										<div class="meta">
+											<span><time class="entry-date published" datetime="2019-04-12T14:30:55+00:00">Tháng Tư 12, 2019</time></span>
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- #main-content -->
+	<footer class="footer">
+		<div class="container">
+			<div class="row row-f">
+				<div class="col-lg-4">
+					<div class="hotline text-right" id="hotline">
+						<p class="title">Hotline tư vấn</p>
+						<a href="tel:0988586699">098.858.6699</a>
+					</div>
+					<div class="cp">
+						<h1 class="title">TOP SIM VIỆT NAM - TOPSIM.vn</h1>
+						<div class="cp-description">
+							<p>
+								TOP SIM VIỆT NAM là thương hiệu bán sim số đẹp với trụ sở chính tại Hưng Yên và cơ sở trên toàn quốc. Website chính thức là TOPSIM.vn Phone: 098.858.6699
+							</p>
+						</div>
+					</div>
+					<div class="social">
+						<a href="#" target="_blank" class="facebook" rel="nofollow"><i class="fa fa-facebook"></i></a>
+						<a href="#" target="_blank" class="twitter" rel="nofollow"><i class="fa fa-twitter"></i></a>
+						<a href="#" target="_blank" class="instagram" rel="nofollow"><i class="fa fa-instagram"></i></a>
+						<a href="#" target="_blank" class="pinterest" rel="nofollow"><i class="fa fa-pinterest"></i></a>
+					</div>
+					<a href="#" target="_blank">
+						<img src="images/dmca-badge.png" alt="">
+					</a>
+					<p class="copyright">
+						Copyright 2018 © TOP SIM
+					</p>
+				</div>
+				<div class="col-lg-8">
+					<div class="list-company row">
+						<div class="list-company--item col-xs-12 col-md-6">
+							<p class="title">Hà Nội</p>
+							<div class="info">
+								<p><i class="fa fa-map-marker"></i> 55B Ô Chợ Dừa, Q.Đống Đa.</p>
+								<p><i class="fa fa-map-marker"></i> 84 Nguyễn Chí Thanh, Q.Đống Đa.</p>
+								<p><i class="fa fa-map-marker"></i> 222 Nguyễn Văn Cừ, Q.Long Biên.</p>
+							</div>
+						</div>
+						<div class="list-company--item col-xs-12 col-md-6">
+							<p class="title">Hồ Chí Minh</p>
+							<div class="info">
+								<p><i class="fa fa-map-marker"></i> 538 Nguyễn Thị Minh Khai, P2, Quận 3.</p>
+								<p><i class="fa fa-map-marker"></i> Số 49B Trần Hưng Đạo , Phường 6 , Quận 5.</p>
+								<p><i class="fa fa-map-marker"></i> Số 84 Trương Vĩnh Ký , Phường Tân Thành , Quận Tân Phú.</p>
+							</div>
+						</div>
+						<div class="list-company--item col-xs-12 col-md-6">
+							<p class="title">Đà Nẵng</p>
+							<div class="info">
+								<p><i class="fa fa-map-marker"></i> 301 Nguyễn Văn Linh, Q.Thanh Khê.</p>
+							</div>
+						</div>
+						<div class="list-company--item col-xs-12 col-md-6">
+							<p class="title">Bắc Ninh</p>
+							<div class="info">
+								<p><i class="fa fa-map-marker"></i> 69 Trần Hưng Đạo, P.Tiền An.</p>
+							</div>
+						</div>
+						<div class="list-company--item col-xs-12 col-md-6">
+							<p class="title">Hải Dương</p>
+							<div class="info">
+								<p><i class="fa fa-map-marker"></i> 32 Trần Hưng Đạo, TP.Hải Dương.</p>
+							</div>
+						</div>
+						<div class="list-company--item col-xs-12 col-md-6">
+							<p class="title">Tuyên Quang</p>
+							<div class="info">
+								<p><i class="fa fa-map-marker"></i> 257 Quang Trung, P.Phan Thiết, TP.Tuyên Quang.</p>
+							</div>
+						</div>
+						<div class="list-company--item col-xs-12 col-md-6">
+							<p class="title">Hưng Yên</p>
+							<div class="info">
+								<p><i class="fa fa-map-marker"></i> Số 76 - 78 Tòa nhà BIDV, vòng xuyến Văn Giang, TT Văn Giang</p>
+							</div>
+						</div>
+						<div class="list-company--item col-xs-12 col-md-6">
+							<p class="title">Lạng Sơn</p>
+							<div class="info">
+								<p><i class="fa fa-map-marker"></i> 54 Lê Lợi, Vĩnh Trại, TP.Lạng Sơn.</p>
+							</div>
+						</div>
+					</div>
+				</div>	
+			</div>
+		</div>
+	</footer>
+	<!-- banner left right -->
+	<div id="banner1" class="banner" style="top: 100px">
+		<img src="images/banner01.png" alt="">
+	</div>
+	<div id="banner2" class="banner" style="top: 100px">
+		<img src="images/banner02.png" alt="">
+	</div>
+	<div class="hotline-btn">
+		<a href="tel:0909999999">0909999999
+			<div id="phone">
+				<span></span>
+			</div>
+			<div></div>
+		</a>
+	</div>
+</body>
+</html>

@@ -1,0 +1,1325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Sim Vip - Sim doanh nhân</title>
+	<link href="css/layout.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+	<script src="js/main.js"></script>
+	<!-- FlexSlider -->
+	<link href="css/flexslider.css" rel="stylesheet" type="text/css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script defer src="js/jquery.flexslider.js"></script>
+	<script type="text/javascript">
+	$(window).load(function(){
+		$('#carousel').flexslider({
+			animation: "slide",
+			controlNav: false,
+			animationLoop: false,
+			slideshow: false,
+			itemWidth: 135,
+			itemMargin: 10,
+			asNavFor: '#slider'
+		});
+
+		$('#slider').flexslider({
+			animation: "slide",
+			controlNav: false,
+			animationLoop: false,
+			slideshow: false,
+			sync: "#carousel",
+			start: function(slider){
+				$('body').removeClass('loading');
+			}
+		});
+	});
+	</script>
+</head>
+<body class="">
+	<header id="head" class="header">
+		<div class="header-wrap">
+			<div class="container">
+				<div class="row bg-header">
+					<!-- nut menu mobile -->
+					<div id="btn-open-menu" class="open-menu">
+						<i class="sprite-icon-open-menu"></i>
+					</div>
+					<div class="header-search-group">
+						<!-- logo -->
+						<div class="header-logo">
+							<!-- logo desktop -->
+							<a class="header-logo--pc" href="index.html"><img src="images/log_news_1.png" alt=""></a>
+							<!-- logo mobile -->
+							<a class="header-logo--mobile" href="index.html"><img src="images/log_news_1.png" alt=""></a> 
+							<!-- logo_mobile.png -->
+						</div>
+						<!-- #logo -->
+						<!-- form search in mobile -->
+						<div class="header-form-search d-block d-lg-none">
+							 <form id="search" method="post">
+								<input id="key" type="tel" autocomplete="off" name="search-number" placeholder="Nhập số cần tìm">
+								
+								<div id="popover" class="popover">
+									<div class="arrow"></div>
+									<h3 class="popover-title">Hướng dẫn tìm sim</h3>
+									<div class="popover-content">
+										Hot key: 09*9999, *9999, *6868, *1989, 09*99x99
+									</div>		
+								</div>		 
+								<input type="submit" name="submit" class="btn btn-success btn-mobile" value="">
+							</form> 
+						</div>
+						<!-- #form-search -->
+					</div>
+					<!-- menu -->
+					<div class="header-menu d-none d-md-block">
+						<ul class="main-menu">
+						    <li class="has-child">
+						    	<a class="icon icon-home" href="index.html">Trang chủ</a>
+						    	<!-- ẩn menu con
+						    	<ul class="child-list">
+						    	    <li><a href="danh-muc.html">Sim Vip</a></li>
+						    	    <li><a href="sim-luc-quy.html">Sim Lục quý</a></li>
+						    	    <li><a href="sim-luc-quy-giua.html">Sim Lục quý giữa</a></li>
+						    	    <li><a href="sim-ngu-quy.html">Sim ngũ quý</a></li>
+						    	    <li><a href="sim-ngu-quy-giua.html">Sim ngũ quý giữa</a></li>
+						    	    <li><a href="sim-tu-quy.html">Sim Tứ quý</a></li>
+						    	    <li><a href="sim-tu-quy-giua.html">Sim tứ quý giữa</a></li>
+						    	    <li><a href="sim-tam-hoa.html">Sim Tam hoa</a></li>
+						    	    <li><a href="sim-tam-hoa-kep.html">Sim tam hoa kép</a></li>
+						    	    <li><a href="sim-taxi.html">Sim Taxi</a></li>
+						    	    <li><a href="sim-loc-phat.html">Sim Lộc phát</a></li>
+						    	    <li><a href="sim-than-tai.html">Sim Thần tài</a></li>
+						    	    <li><a href="sim-ong-dia.html">Sim Ông địa</a></li>
+						    	    <li><a href="sim-lap-kep.html">Sim Lặp kép</a></li>
+						    	    <li><a href="sim-ganh-dao.html">Sim Gánh đảo</a></li>
+						    	    <li><a href="sim-tien-len.html">Sim Tiến lên</a></li>
+						    	    <li><a href="sim-de-nho.html">Sim Dễ nhớ</a></li>
+						    	    <li><a href="sim-nam-sinh.html">Sim Năm sinh</a></li>
+						    	    <li><a href="sim-so-doc.html">Sim Số độc</a></li>
+						    	    <li><a href="sim-dau-so-co.html">Sim đầu số cổ</a></li>
+						    	    <li><a href="sim-luc-quy.html">Sim Trả Góp</a></li>
+						    	</ul>
+						    	-->
+						    </li>
+						    <li><a class="icon icon-vietnamobile" href="sim-thanh-ly.html" style="font-weight: bold;font-size: 13px;">sim thanh lý</a></li>
+						    <li><a class="icon icon-viettel" href="thanh-toan.html">thanh toán</a></li>
+						    <li><a class="icon icon-vinaphone" href="lien-he.html">liên hệ</a></li>
+						    <li><a class="icon icon-gmobile" href="cam-co-sim.html">cầm cố sim</a></li>
+						    <li><a class="icon icon-mobifone" href="thu-mua-sim.html">thu mua sim</a></li>
+						    <!-- <li style="width: 17.5%;"><a class="icon icon-vietnamobile" href="sim-thanh-ly.html" style="font-weight: bold;font-size: 13px;">sim thanh lý</a></li> -->
+						    <!-- <li><a class="icon icon-vietnamobile" href="sim-vietnamobile.html">sim phong thủy</a></li> -->
+						    <li><a class="icon icon-news" href="tin-tuc.html">tin tức</a></li>
+						</ul>
+						<div class="w-100 clearfix"></div>
+						
+						<!-- panel -->
+						<div class="panel d-block d-md-none">
+							<div class="panel-header">SIM THEO GIÁ</div>
+							<div class="panel-content">
+								<ul class="sitebar-list">
+									<li><a href="danh-muc.html">Dưới 500 nghìn</a></li>
+									<li><a href="danh-muc.html">Sim 500 - 1 triệu</a></li>
+									<li><a href="danh-muc.html">Sim 1 - 3 triệu</a></li>
+									<li><a href="danh-muc.html">Sim 3 - 5 triệu</a></li>
+									<li><a href="danh-muc.html">Sim 5 - 10 triệu</a></li>
+									<li><a href="danh-muc.html">Sim 10 - 50 triệu</a></li>
+									<li><a href="danh-muc.html">Sim 50 - 100 triệu</a></li>
+									<li><a href="danh-muc.html">Sim 100 - 200 triệu</a></li>
+									<li><a href="danh-muc.html">Sim 200 - 500 triệu</a></li>
+									<li><a href="danh-muc.html">Sim trên 500 triệu</a></li>
+								</ul>
+							</div>
+						</div>
+						<!-- #panel -->
+						<!-- panel -->
+						<div class="panel d-block d-md-none">
+							<div class="panel-header">SIM THEO MẠNG</div>
+							<div class="panel-content">
+								<ul class="sitebar-list">
+									<li><a href="sim-viettel.html">Sim Viettel</a></li>
+									<li><a href="sim-vinaphone.html">Sim Vinaphone</a></li>
+									<li><a href="sim-mobifone.html">Sim Mobifone</a></li>
+									<li><a href="sim-vietnamobile.html">Sim Vietnamobile</a></li>
+									<li><a href="sim-gmobile.html">Sim Gmobile</a></li>
+									<li><a href="sim-gmobile.html">Sim Itelecom</a></li>
+								</ul>
+							</div>
+						</div>
+						<!-- #panel -->
+						<!-- panel -->
+						<div class="panel d-block d-md-none">
+							<div class="panel-header">SIM TẠO THƯƠNG HIỆU</div>
+							<div class="panel-content">
+								<ul class="sitebar-list">
+									<li><a href="danh-muc.html">Sim Lục quý</a></li>
+									<li><a href="danh-muc.html">Sim Lục quý giữa</a></li>
+									<li><a href="danh-muc.html">Sim ngũ quý</a></li>
+									<li><a href="danh-muc.html">Sim ngũ quý giữa</a></li>
+									<li><a href="danh-muc.html">Sim tứ quý</a></li>
+									<li><a href="danh-muc.html">Sim tam hoa kép</a></li>
+									<li><a href="danh-muc.html">Sim Taxi</a></li>
+									<li><a href="danh-muc.html">Sim trả góp</a></li>
+								</ul>
+							</div>
+						</div>
+						<!-- #panel -->
+						<div class="panel d-block d-md-none">
+							<div class="panel-header">SIM VIP DOANH NHÂN</div>
+							<div class="panel-content">
+								<ul class="sitebar-list">
+									<li><a href="danh-muc.html">Sim tứ quý giữa</a></li>
+									<li><a href="danh-muc.html">Sim tam hoa</a></li>
+									<li><a href="danh-muc.html">Sim tiến lên</a></li>
+									<li><a href="danh-muc.html">Sim dễ nhớ</a></li>
+									<li><a href="danh-muc.html">Sim số độc</a></li>
+									<li><a href="danh-muc.html">Sim lặp kép</a></li>
+									<li><a href="danh-muc.html">Sim gánh đảo</a></li>
+									<li><a href="danh-muc.html">Sim Năm sinh</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!-- #menu -->
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- main content -->
+	<div class="main-content">
+		<div class="container">
+			<div class="row">
+				<div class="page">
+					<div class="row">
+						<div class="page--left col-lg-8">
+							<div class="widget">
+								<!-- slide tin tức -->
+								<div id="slider" class="flexslider">
+									<ul class="slides">
+										<li>
+											<img src="images/news1.png" alt="">
+											<div class="slides-content">
+												<div class="slides-detail">
+													<div class="cat-link">
+														<a href="tin-tuc.html">Kiến thức sim</a> / <a href="tin-tuc.html">Tin nhà mạng</a>
+													</div>
+													<a href="noi-dung.html">
+														<h3 class="slides-detail--title">Lợi ích thực sự từ những gói cước khuyến mãi của các nhà mạng</h3>
+													</a>
+													<div class="slides-detail--meta">
+														<span class="posted-on">
+															<a href="#">
+																<time class="entry-date published" datetime="2019-04-12T14:30:55+00:00">Tháng Tư 12, 2019</time>
+															</a>
+														</span>
+														<span class="post-meta--step"> - </span>
+														<span class="post-meta--author">by <a href="#">Khánh Duy</a></span>
+														<span class="post-meta--step"> - </span>
+														<span class="post-meta--commentLinks"><a href="#">Leave a Comment</a></span>
+													</div>
+												</div>
+											</div>
+										</li>
+										<li>
+											<img src="images/news2.png" alt="">
+											<div class="slides-content">
+												<div class="slides-detail">
+													<div class="cat-link">
+														<a href="tin-tuc.html">Kiến thức sim</a> / <a href="tin-tuc.html">Tin nhà mạng</a>
+													</div>
+													<a href="#">
+														<h3 class="slides-detail--title">Lợi ích thực sự từ những gói cước khuyến mãi của các nhà mạng</h3>
+													</a>
+													<div class="slides-detail--meta">
+														<span class="posted-on">
+															<a href="#">
+																<time class="entry-date published" datetime="2019-04-12T14:30:55+00:00">Tháng Tư 12, 2019</time>
+															</a>
+														</span>
+														<span class="post-meta--step"> - </span>
+														<span class="post-meta--author">by <a href="#">Khánh Duy</a></span>
+														<span class="post-meta--step"> - </span>
+														<span class="post-meta--commentLinks"><a href="#">Leave a Comment</a></span>
+													</div>
+												</div>
+											</div>
+										</li>
+										<li>
+											<img src="images/news3.png" alt="">
+											<div class="slides-content">
+												<div class="slides-detail">
+													<div class="cat-link">
+														<a href="tin-tuc.html">Kiến thức sim</a> / <a href="tin-tuc.html">Tin nhà mạng</a>
+													</div>
+													<a href="noi-dung.html">
+														<h3 class="slides-detail--title">Lợi ích thực sự từ những gói cước khuyến mãi của các nhà mạng</h3>
+													</a>
+													<div class="slides-detail--meta">
+														<span class="posted-on">
+															<a href="#">
+																<time class="entry-date published" datetime="2019-04-12T14:30:55+00:00">Tháng Tư 12, 2019</time>
+															</a>
+														</span>
+														<span class="post-meta--step"> - </span>
+														<span class="post-meta--author">by <a href="#">Khánh Duy</a></span>
+														<span class="post-meta--step"> - </span>
+														<span class="post-meta--commentLinks"><a href="#">Leave a Comment</a></span>
+													</div>
+												</div>
+											</div>
+										</li>
+										<li>
+											<img src="images/news4.png" alt="">
+											<div class="slides-content">
+												<div class="slides-detail">
+													<div class="cat-link">
+														<a href="tin-tuc.html">Kiến thức sim</a> / <a href="tin-tuc.html">Tin nhà mạng</a>
+													</div>
+													<a href="noi-dung.html">
+														<h3 class="slides-detail--title">Lợi ích thực sự từ những gói cước khuyến mãi của các nhà mạng</h3>
+													</a>
+													<div class="slides-detail--meta">
+														<span class="posted-on">
+															<a href="#">
+																<time class="entry-date published" datetime="2019-04-12T14:30:55+00:00">Tháng Tư 12, 2019</time>
+															</a>
+														</span>
+														<span class="post-meta--step"> - </span>
+														<span class="post-meta--author">by <a href="#">Khánh Duy</a></span>
+														<span class="post-meta--step"> - </span>
+														<span class="post-meta--commentLinks"><a href="#">Leave a Comment</a></span>
+													</div>
+												</div>
+											</div>
+										</li>
+										<li>
+											<img src="images/news5.png" alt="">
+											<div class="slides-content">
+												<div class="slides-detail">
+													<div class="cat-link">
+														<a href="tin-tuc.html">Kiến thức sim</a> / <a href="tin-tuc.html">Tin nhà mạng</a>
+													</div>
+													<a href="noi-dung.html">
+														<h3 class="slides-detail--title">Lợi ích thực sự từ những gói cước khuyến mãi của các nhà mạng</h3>
+													</a>
+													<div class="slides-detail--meta">
+														<span class="posted-on">
+															<a href="#">
+																<time class="entry-date published" datetime="2019-04-12T14:30:55+00:00">Tháng Tư 12, 2019</time>
+															</a>
+														</span>
+														<span class="post-meta--step"> - </span>
+														<span class="post-meta--author">by <a href="#">Khánh Duy</a></span>
+														<span class="post-meta--step"> - </span>
+														<span class="post-meta--commentLinks"><a href="#">Leave a Comment</a></span>
+													</div>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+								<!-- thumnail slide -->
+								<div id="carousel" class="flexslider">
+									<ul class="slides">
+										<li>
+											<img src="images/news1.png" alt="">
+										</li>
+										<li>
+											<img src="images/news2.png" alt="">
+										</li>
+										<li>
+											<img src="images/news3.png" alt="">
+										</li>
+										<li>
+											<img src="images/news4.png" alt="">
+										</li>
+										<li>
+											<img src="images/news5.png" alt="">
+										</li>
+									</ul>
+								</div>
+							</div>
+							<!-- nhom tin tuc -->
+							<div class="widget">
+								<div class="widget--head">
+									<h4 class="title">Cách chọn sim</h4>
+									<a href="tin-tuc.html" class="view-all"><span>Xem thêm</span></a>
+								</div>
+								<div class="post-group">
+									<!-- post large -->
+									<div class="post post-lg">
+										<a href="noi-dung.html"><img src="images/post1.png" alt=""></a>
+										<div class="cat-link">
+											<a href="tin-tuc.html">Cách chọn sim</a> / <a href="tin-tuc.html">Ý nghĩa sim</a>
+										</div>
+										<h3 class="post-title">
+											<a href="noi-dung.html">Ý nghĩa và cách chọn sim đuôi 1468 – Sinh Tài Lộc Phát</a>
+										</h3>
+										<div class="post-meta">
+											<span class="posted-on">
+												<a href="#">
+													<time class="entry-date published" datetime="2019-04-12T14:30:55+00:00">Tháng Tư 12, 2019</time>
+												</a>
+											</span>
+											<span class="post-meta--step"> - </span>
+											<span class="post-meta--author">by <a href="#">Khánh Duy</a></span>
+											<span class="post-meta--step"> - </span>
+											<span class="post-meta--commentLinks"><a href="#">Leave a Comment</a></span>
+										</div>
+										<div class="post-description">
+											<p>
+												Ý nghĩa và cách chọn sim đuôi 1468 – Sinh Tài Lộc Phát4.9 (98.18%) 11 votes Bạn đang muốn sở hữu sim đuôi 1468 nhưng lại chưa nắm rõ được … 
+											</p>
+										</div>
+									</div>
+									<div class="post post-sm">
+										<!-- post small -->
+										<div class="post-sm-item">
+											<div class="thumb">
+												<a href="noi-dung.html" title="Bạn đã biết cách chọn sim số đẹp sao cho thật ấn tượng chưa?">
+													<img src="images/post2.png" alt="Bạn đã biết cách chọn sim số đẹp sao cho thật ấn tượng chưa?">
+												</a>
+											</div>
+											<div class="detail">
+												<h3 class="title"><a href="noi-dung.html">Bạn đã biết cách chọn sim số đẹp sao cho thật ấn tượng chưa?</a></h3>
+												<div class="meta">
+													<span><time class="entry-date published" datetime="2019-04-12T14:30:55+00:00">Tháng Tư 12, 2019</time></span>
+												</div>
+											</div>
+										</div>
+										<div class="post-sm-item">
+											<div class="thumb">
+												<a href="noi-dung.html" title="Làm thế nào để lựa chọn đầu số đẹp cho sim Lặp Kép?">
+													<img src="images/post3.png" alt="Làm thế nào để lựa chọn đầu số đẹp cho sim Lặp Kép?">
+												</a>
+											</div>
+											<div class="detail">
+												<h3 class="title"><a href="noi-dung.html">Làm thế nào để lựa chọn đầu số đẹp cho sim Lặp Kép?</a></h3>
+												<div class="meta">
+													<span><time class="entry-date published" datetime="2019-04-12T14:30:55+00:00">Tháng Tư 12, 2019</time></span>
+												</div>
+											</div>
+										</div>
+										<div class="post-sm-item">
+											<div class="thumb">
+												<a href="noi-dung.html" title="Làm thế nào để chọn sim năm sinh 1983 phù hợp nhất?">
+													<img src="images/post4.png" alt="Làm thế nào để chọn sim năm sinh 1983 phù hợp nhất?">
+												</a>
+											</div>
+											<div class="detail">
+												<h3 class="title"><a href="noi-dung.html">Làm thế nào để chọn sim năm sinh 1983 phù hợp nhất?</a></h3>
+												<div class="meta">
+													<span><time class="entry-date published" datetime="2019-04-12T14:30:55+00:00">Tháng Tư 12, 2019</time></span>
+												</div>
+											</div>
+										</div>
+										<div class="post-sm-item">
+											<div class="thumb">
+												<a href="noi-dung.html" title="Bí quyết chọn sim số đẹp cho sim Taxi cực chính xác">
+													<img src="images/post5.png" alt="Bí quyết chọn sim số đẹp cho sim Taxi cực chính xác">
+												</a>
+											</div>
+											<div class="detail">
+												<h3 class="title"><a href="#">Bí quyết chọn sim số đẹp cho sim Taxi cực chính xác</a></h3>
+												<div class="meta">
+													<span><time class="entry-date published" datetime="2019-04-12T14:30:55+00:00">Tháng Tư 12, 2019</time></span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div> 
+
+							<div class="widget">
+								<div class="widget--head">
+									<h4 class="title">Ý nghĩa sim </h4>
+									<a href="tin-tuc.html" class="view-all"><span>Xem thêm</span></a>
+								</div>
+								<div class="post-group">
+									<!-- post large -->
+									<div class="post post-lg">
+										<a href="noi-dung.html"><img src="images/post1.png" alt=""></a>
+										<div class="cat-link">
+											<a href="tin-tuc.html">Cách chọn sim</a> / <a href="tin-tuc.html">Ý nghĩa sim</a>
+										</div>
+										<h3 class="post-title">
+											<a href="tin-tuc.html">Ý nghĩa và cách chọn sim đuôi 1468 – Sinh Tài Lộc Phát</a>
+										</h3>
+										<div class="post-meta">
+											<span class="posted-on">
+												<a href="#">
+													<time class="entry-date published" datetime="2019-04-12T14:30:55+00:00">Tháng Tư 12, 2019</time>
+												</a>
+											</span>
+											<span class="post-meta--step"> - </span>
+											<span class="post-meta--author">by <a href="#">Khánh Duy</a></span>
+											<span class="post-meta--step"> - </span>
+											<span class="post-meta--commentLinks"><a href="#">Leave a Comment</a></span>
+										</div>
+										<div class="post-description">
+											<p>
+												Ý nghĩa và cách chọn sim đuôi 1468 – Sinh Tài Lộc Phát4.9 (98.18%) 11 votes Bạn đang muốn sở hữu sim đuôi 1468 nhưng lại chưa nắm rõ được … 
+											</p>
+										</div>
+									</div>
+									<div class="post post-sm">
+										<!-- post small -->
+										<div class="post-sm-item">
+											<div class="thumb">
+												<a href="noi-dung.html" title="Bạn đã biết cách chọn sim số đẹp sao cho thật ấn tượng chưa?">
+													<img src="images/post2.png" alt="Bạn đã biết cách chọn sim số đẹp sao cho thật ấn tượng chưa?">
+												</a>
+											</div>
+											<div class="detail">
+												<h3 class="title"><a href="noi-dung.html">Bạn đã biết cách chọn sim số đẹp sao cho thật ấn tượng chưa?</a></h3>
+												<div class="meta">
+													<span><time class="entry-date published" datetime="2019-04-12T14:30:55+00:00">Tháng Tư 12, 2019</time></span>
+												</div>
+											</div>
+										</div>
+										<div class="post-sm-item">
+											<div class="thumb">
+												<a href="noi-dung.html" title="Bạn đã biết cách chọn sim số đẹp sao cho thật ấn tượng chưa?">
+													<img src="images/post3.png" alt="Bạn đã biết cách chọn sim số đẹp sao cho thật ấn tượng chưa?">
+												</a>
+											</div>
+											<div class="detail">
+												<h3 class="title"><a href="noi-dung.html">Bạn đã biết cách chọn sim số đẹp sao cho thật ấn tượng chưa?</a></h3>
+												<div class="meta">
+													<span><time class="entry-date published" datetime="2019-04-12T14:30:55+00:00">Tháng Tư 12, 2019</time></span>
+												</div>
+											</div>
+										</div>
+										<div class="post-sm-item">
+											<div class="thumb">
+												<a href="noi-dung.html" title="Bạn đã biết cách chọn sim số đẹp sao cho thật ấn tượng chưa?">
+													<img src="images/post4.png" alt="Bạn đã biết cách chọn sim số đẹp sao cho thật ấn tượng chưa?">
+												</a>
+											</div>
+											<div class="detail">
+												<h3 class="title"><a href="noi-dung.html">Bạn đã biết cách chọn sim số đẹp sao cho thật ấn tượng chưa?</a></h3>
+												<div class="meta">
+													<span><time class="entry-date published" datetime="2019-04-12T14:30:55+00:00">Tháng Tư 12, 2019</time></span>
+												</div>
+											</div>
+										</div>
+										<div class="post-sm-item">
+											<div class="thumb">
+												<a href="noi-dung.html" title="Bạn đã biết cách chọn sim số đẹp sao cho thật ấn tượng chưa?">
+													<img src="images/post5.png" alt="Bạn đã biết cách chọn sim số đẹp sao cho thật ấn tượng chưa?">
+												</a>
+											</div>
+											<div class="detail">
+												<h3 class="title"><a href="noi-dung.html">Bạn đã biết cách chọn sim số đẹp sao cho thật ấn tượng chưa?</a></h3>
+												<div class="meta">
+													<span><time class="entry-date published" datetime="2019-04-12T14:30:55+00:00">Tháng Tư 12, 2019</time></span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="widget">
+								<div class="widget-left">
+									<div class="widget--head">
+										<h4 class="title">Kiến thức sim </h4>
+										<a href="tin-tuc.html" class="view-all"><span>Xem thêm</span></a>
+									</div>
+									<!-- post large -->
+									<div class="post post-lg">
+										<a href="#"><img src="images/post1.png" alt=""></a>
+										<div class="cat-link">
+											<a href="tin-tuc.html">Cách chọn sim</a> / <a href="tin-tuc.html">Ý nghĩa sim</a>
+										</div>
+										<h3 class="post-title">
+											<a href="noi-dung.html">Ý nghĩa và cách chọn sim đuôi 1468 – Sinh Tài Lộc Phát</a>
+										</h3>
+										<div class="post-meta">
+											<span class="posted-on">
+												<a href="#">
+													<time class="entry-date published" datetime="2019-04-12T14:30:55+00:00">Tháng Tư 12, 2019</time>
+												</a>
+											</span>
+											<span class="post-meta--step"> - </span>
+											<span class="post-meta--author">by <a href="#">Khánh Duy</a></span>
+											<span class="post-meta--step"> - </span>
+											<span class="post-meta--commentLinks"><a href="#">Leave a Comment</a></span>
+										</div>
+										<div class="post-description">
+											<p>
+												Ý nghĩa và cách chọn sim đuôi 1468 – Sinh Tài Lộc Phát4.9 (98.18%) 11 votes Bạn đang muốn sở hữu sim đuôi 1468 nhưng lại chưa nắm rõ được … 
+											</p>
+										</div>
+									</div>
+									<!-- post small -->
+									<div class="post-sm-item">
+										<div class="thumb">
+											<a href="noi-dung.html" title="Bạn đã biết cách chọn sim số đẹp sao cho thật ấn tượng chưa?">
+												<img src="images/post2.png" alt="Bạn đã biết cách chọn sim số đẹp sao cho thật ấn tượng chưa?">
+											</a>
+										</div>
+										<div class="detail">
+											<h3 class="title"><a href="noi-dung.html">Bạn đã biết cách chọn sim số đẹp sao cho thật ấn tượng chưa?</a></h3>
+											<div class="meta">
+												<span><time class="entry-date published" datetime="2019-04-12T14:30:55+00:00">Tháng Tư 12, 2019</time></span>
+											</div>
+										</div>
+									</div>
+									<div class="post-sm-item">
+										<div class="thumb">
+											<a href="noi-dung.html" title="Bạn đã biết cách chọn sim số đẹp sao cho thật ấn tượng chưa?">
+												<img src="images/post3.png" alt="Bạn đã biết cách chọn sim số đẹp sao cho thật ấn tượng chưa?">
+											</a>
+										</div>
+										<div class="detail">
+											<h3 class="title"><a href="noi-dung.html">Bạn đã biết cách chọn sim số đẹp sao cho thật ấn tượng chưa?</a></h3>
+											<div class="meta">
+												<span><time class="entry-date published" datetime="2019-04-12T14:30:55+00:00">Tháng Tư 12, 2019</time></span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="widget-right">
+									<div class="widget--head">
+										<h4 class="title">Các dạng sim </h4>
+										<a href="tin-tuc.html" class="view-all"><span>Xem thêm</span></a>
+									</div>
+									<!-- post large -->
+									<div class="post post-lg">
+										<a href="noi-dung.html"><img src="images/post6.png" alt=""></a>
+										<div class="cat-link">
+											<a href="tin-tuc.html">Các dạng sim</a>
+										</div>
+										<h3 class="post-title">
+											<a href="noi-dung.html">Bí quyết chọn sim Thần Tài cho người kinh doanh</a>
+										</h3>
+										<div class="post-meta">
+											<span class="posted-on">
+												<a href="#">
+													<time class="entry-date published" datetime="2019-04-12T14:30:55+00:00">Tháng Tư 12, 2019</time>
+												</a>
+											</span>
+											<span class="post-meta--step"> - </span>
+											<span class="post-meta--author">by <a href="#">Khánh Duy</a></span>
+											<span class="post-meta--step"> - </span>
+											<span class="post-meta--commentLinks"><a href="#">Leave a Comment</a></span>
+										</div>
+										<div class="post-description">
+											<p>
+												Ý nghĩa và cách chọn sim đuôi 1468 – Sinh Tài Lộc Phát4.9 (98.18%) 11 votes Bạn đang muốn sở hữu sim đuôi 1468 nhưng lại chưa nắm rõ được … 
+											</p>
+										</div>
+									</div>
+									<!-- post small -->
+									<div class="post-sm-item">
+										<div class="thumb">
+											<a href="noi-dung.html" title="Bạn đã biết cách chọn sim số đẹp sao cho thật ấn tượng chưa?">
+												<img src="images/post2.png" alt="Bạn đã biết cách chọn sim số đẹp sao cho thật ấn tượng chưa?">
+											</a>
+										</div>
+										<div class="detail">
+											<h3 class="title"><a href="noi-dung.html">Bạn đã biết cách chọn sim số đẹp sao cho thật ấn tượng chưa?</a></h3>
+											<div class="meta">
+												<span><time class="entry-date published" datetime="2019-04-12T14:30:55+00:00">Tháng Tư 12, 2019</time></span>
+											</div>
+										</div>
+									</div>
+									<div class="post-sm-item">
+										<div class="thumb">
+											<a href="noi-dung.html" title="Bạn đã biết cách chọn sim số đẹp sao cho thật ấn tượng chưa?">
+												<img src="images/post3.png" alt="Bạn đã biết cách chọn sim số đẹp sao cho thật ấn tượng chưa?">
+											</a>
+										</div>
+										<div class="detail">
+											<h3 class="title"><a href="noi-dung.html">Bạn đã biết cách chọn sim số đẹp sao cho thật ấn tượng chưa?</a></h3>
+											<div class="meta">
+												<span><time class="entry-date published" datetime="2019-04-12T14:30:55+00:00">Tháng Tư 12, 2019</time></span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="widget">
+								<div class="widget--head">
+									<h4 class="title">Giải mã số sim </h4>
+									<a href="tin-tuc.html" class="view-all"><span>Xem thêm</span></a>
+								</div>
+								<div class="post-group">
+									<!-- post large -->
+									<div class="post post-lg">
+										<a href="noi-dung.html"><img src="images/post1.png" alt=""></a>
+										<div class="cat-link">
+											<a href="tin-tuc.html">Cách chọn sim</a> / <a href="#">Ý nghĩa sim</a>
+										</div>
+										<h3 class="post-title">
+											<a href="noi-dung.html">Ý nghĩa và cách chọn sim đuôi 1468 – Sinh Tài Lộc Phát</a>
+										</h3>
+										<div class="post-meta">
+											<span class="posted-on">
+												<a href="#">
+													<time class="entry-date published" datetime="2019-04-12T14:30:55+00:00">Tháng Tư 12, 2019</time>
+												</a>
+											</span>
+											<span class="post-meta--step"> - </span>
+											<span class="post-meta--author">by <a href="#">Khánh Duy</a></span>
+											<span class="post-meta--step"> - </span>
+											<span class="post-meta--commentLinks"><a href="#">Leave a Comment</a></span>
+										</div>
+										<div class="post-description">
+											<p>
+												Ý nghĩa và cách chọn sim đuôi 1468 – Sinh Tài Lộc Phát4.9 (98.18%) 11 votes Bạn đang muốn sở hữu sim đuôi 1468 nhưng lại chưa nắm rõ được … 
+											</p>
+										</div>
+									</div>
+									<div class="post post-sm">
+										<!-- post small -->
+										<div class="post-sm-item">
+											<div class="thumb">
+												<a href=".html" title="Bạn đã biết cách chọn sim số đẹp sao cho thật ấn tượng chưa?">
+													<img src="images/post2.png" alt="Bạn đã biết cách chọn sim số đẹp sao cho thật ấn tượng chưa?">
+												</a>
+											</div>
+											<div class="detail">
+												<h3 class="title"><a href="noi-dung.html">Bạn đã biết cách chọn sim số đẹp sao cho thật ấn tượng chưa?</a></h3>
+												<div class="meta">
+													<span><time class="entry-date published" datetime="2019-04-12T14:30:55+00:00">Tháng Tư 12, 2019</time></span>
+												</div>
+											</div>
+										</div>
+										<div class="post-sm-item">
+											<div class="thumb">
+												<a href="noi-dung.html" title="Bạn đã biết cách chọn sim số đẹp sao cho thật ấn tượng chưa?">
+													<img src="images/post3.png" alt="Bạn đã biết cách chọn sim số đẹp sao cho thật ấn tượng chưa?">
+												</a>
+											</div>
+											<div class="detail">
+												<h3 class="title"><a href="noi-dung.html">Bạn đã biết cách chọn sim số đẹp sao cho thật ấn tượng chưa?</a></h3>
+												<div class="meta">
+													<span><time class="entry-date published" datetime="2019-04-12T14:30:55+00:00">Tháng Tư 12, 2019</time></span>
+												</div>
+											</div>
+										</div>
+										<div class="post-sm-item">
+											<div class="thumb">
+												<a href="noi-dung.html" title="Bạn đã biết cách chọn sim số đẹp sao cho thật ấn tượng chưa?">
+													<img src="images/post4.png" alt="Bạn đã biết cách chọn sim số đẹp sao cho thật ấn tượng chưa?">
+												</a>
+											</div>
+											<div class="detail">
+												<h3 class="title"><a href="noi-dung.html">Bạn đã biết cách chọn sim số đẹp sao cho thật ấn tượng chưa?</a></h3>
+												<div class="meta">
+													<span><time class="entry-date published" datetime="2019-04-12T14:30:55+00:00">Tháng Tư 12, 2019</time></span>
+												</div>
+											</div>
+										</div>
+										<div class="post-sm-item">
+											<div class="thumb">
+												<a href="noi-dung.html" title="Bạn đã biết cách chọn sim số đẹp sao cho thật ấn tượng chưa?">
+													<img src="images/post5.png" alt="Bạn đã biết cách chọn sim số đẹp sao cho thật ấn tượng chưa?">
+												</a>
+											</div>
+											<div class="detail">
+												<h3 class="title"><a href="noi-dung.html">Bạn đã biết cách chọn sim số đẹp sao cho thật ấn tượng chưa?</a></h3>
+												<div class="meta">
+													<span><time class="entry-date published" datetime="2019-04-12T14:30:55+00:00">Tháng Tư 12, 2019</time></span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="widget">
+								<div class="widget--head">
+									<h4 class="title">tin top sim </h4>
+									<a href="#" class="view-all"><span>Xem thêm</span></a>
+								</div>
+								<div class="post-group">
+									<!-- post large -->
+									<div class="post post-lg">
+										<a href="#"><img src="images/post1.png" alt=""></a>
+										<div class="cat-link">
+											<a href="#">Cách chọn sim</a> / <a href="#">Ý nghĩa sim</a>
+										</div>
+										<h3 class="post-title">
+											<a href="#">Ý nghĩa và cách chọn sim đuôi 1468 – Sinh Tài Lộc Phát</a>
+										</h3>
+										<div class="post-meta">
+											<span class="posted-on">
+												<a href="#">
+													<time class="entry-date published" datetime="2019-04-12T14:30:55+00:00">Tháng Tư 12, 2019</time>
+												</a>
+											</span>
+											<span class="post-meta--step"> - </span>
+											<span class="post-meta--author">by <a href="#">Khánh Duy</a></span>
+											<span class="post-meta--step"> - </span>
+											<span class="post-meta--commentLinks"><a href="#">Leave a Comment</a></span>
+										</div>
+										<div class="post-description">
+											<p>
+												Ý nghĩa và cách chọn sim đuôi 1468 – Sinh Tài Lộc Phát4.9 (98.18%) 11 votes Bạn đang muốn sở hữu sim đuôi 1468 nhưng lại chưa nắm rõ được … 
+											</p>
+										</div>
+									</div>
+									<div class="post post-sm">
+										<!-- post small -->
+										<div class="post-sm-item">
+											<div class="thumb">
+												<a href="#" title="Bạn đã biết cách chọn sim số đẹp sao cho thật ấn tượng chưa?">
+													<img src="images/post2.png" alt="Bạn đã biết cách chọn sim số đẹp sao cho thật ấn tượng chưa?">
+												</a>
+											</div>
+											<div class="detail">
+												<h3 class="title"><a href="#">Bạn đã biết cách chọn sim số đẹp sao cho thật ấn tượng chưa?</a></h3>
+												<div class="meta">
+													<span><time class="entry-date published" datetime="2019-04-12T14:30:55+00:00">Tháng Tư 12, 2019</time></span>
+												</div>
+											</div>
+										</div>
+										<div class="post-sm-item">
+											<div class="thumb">
+												<a href="#" title="Bạn đã biết cách chọn sim số đẹp sao cho thật ấn tượng chưa?">
+													<img src="images/post3.png" alt="Bạn đã biết cách chọn sim số đẹp sao cho thật ấn tượng chưa?">
+												</a>
+											</div>
+											<div class="detail">
+												<h3 class="title"><a href="#">Bạn đã biết cách chọn sim số đẹp sao cho thật ấn tượng chưa?</a></h3>
+												<div class="meta">
+													<span><time class="entry-date published" datetime="2019-04-12T14:30:55+00:00">Tháng Tư 12, 2019</time></span>
+												</div>
+											</div>
+										</div>
+										<div class="post-sm-item">
+											<div class="thumb">
+												<a href="#" title="Bạn đã biết cách chọn sim số đẹp sao cho thật ấn tượng chưa?">
+													<img src="images/post4.png" alt="Bạn đã biết cách chọn sim số đẹp sao cho thật ấn tượng chưa?">
+												</a>
+											</div>
+											<div class="detail">
+												<h3 class="title"><a href="#">Bạn đã biết cách chọn sim số đẹp sao cho thật ấn tượng chưa?</a></h3>
+												<div class="meta">
+													<span><time class="entry-date published" datetime="2019-04-12T14:30:55+00:00">Tháng Tư 12, 2019</time></span>
+												</div>
+											</div>
+										</div>
+										<div class="post-sm-item">
+											<div class="thumb">
+												<a href="#" title="Bạn đã biết cách chọn sim số đẹp sao cho thật ấn tượng chưa?">
+													<img src="images/post5.png" alt="Bạn đã biết cách chọn sim số đẹp sao cho thật ấn tượng chưa?">
+												</a>
+											</div>
+											<div class="detail">
+												<h3 class="title"><a href="#">Bạn đã biết cách chọn sim số đẹp sao cho thật ấn tượng chưa?</a></h3>
+												<div class="meta">
+													<span><time class="entry-date published" datetime="2019-04-12T14:30:55+00:00">Tháng Tư 12, 2019</time></span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="widget">
+								<div class="widget--head">
+									<h4 class="title">tin nhà mạng </h4>
+									<a href="#" class="view-all"><span>Xem thêm</span></a>
+								</div>
+								<div class="row">
+									<div class="col-md-4 post-grid">
+										<div class="thumb">
+											<a href="#" title="Bạn đã biết cách mua thêm dung lượng 4G Viettel cho mình chưa?">
+												<img src="images/post7.png" alt="Bạn đã biết cách mua thêm dung lượng 4G Viettel cho mình chưa?">
+											</a>
+										</div>
+										<div class="detail">
+											<h3 class="title"><a href="#">Bạn đã biết cách mua thêm dung lượng 4G Viettel cho mình chưa?</a></h3>
+											<div class="meta">
+												<span><time class="entry-date published" datetime="2019-04-12T14:30:55+00:00">Tháng Tư 12, 2019</time></span>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-4 post-grid">
+										<div class="thumb">
+											<a href="#" title="Lợi ích thực sự từ những gói cước khuyến mãi của các nhà mạng">
+												<img src="images/post8.png" alt="Lợi ích thực sự từ những gói cước khuyến mãi của các nhà mạng">
+											</a>
+										</div>
+										<div class="detail">
+											<h3 class="title"><a href="#">Lợi ích thực sự từ những gói cước khuyến mãi của các nhà mạng</a></h3>
+											<div class="meta">
+												<span><time class="entry-date published" datetime="2019-04-12T14:30:55+00:00">Tháng Tư 12, 2019</time></span>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-4 post-grid">
+										<div class="thumb">
+											<a href="#" title="TOP 3 gói 4G giá “siêu rẻ”, lên tới 5GB dành cho “fan Liên Quân”">
+												<img src="images/post9.png" alt="TOP 3 gói 4G giá “siêu rẻ”, lên tới 5GB dành cho “fan Liên Quân”">
+											</a>
+										</div>
+										<div class="detail">
+											<h3 class="title"><a href="#">TOP 3 gói 4G giá “siêu rẻ”, lên tới 5GB dành cho “fan Liên Quân”</a></h3>
+											<div class="meta">
+												<span><time class="entry-date published" datetime="2019-04-12T14:30:55+00:00">Tháng Tư 12, 2019</time></span>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-4 post-grid">
+										<div class="thumb">
+											<a href="#" title="Giả mạo số tổng đài quay trở lại- cẩn thận mất tiền oan">
+												<img src="images/post10.png" alt="Giả mạo số tổng đài quay trở lại- cẩn thận mất tiền oan">
+											</a>
+										</div>
+										<div class="detail">
+											<h3 class="title"><a href="#">Giả mạo số tổng đài quay trở lại- cẩn thận mất tiền oan</a></h3>
+											<div class="meta">
+												<span><time class="entry-date published" datetime="2019-04-12T14:30:55+00:00">Tháng Tư 12, 2019</time></span>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-4 post-grid">
+										<div class="thumb">
+											<a href="#" title="Giải đáp khi nào có thể sử dụng mạng 5G?">
+												<img src="images/post11.png" alt="Giải đáp khi nào có thể sử dụng mạng 5G?">
+											</a>
+										</div>
+										<div class="detail">
+											<h3 class="title"><a href="#">Giải đáp khi nào có thể sử dụng mạng 5G?</a></h3>
+											<div class="meta">
+												<span><time class="entry-date published" datetime="2019-04-12T14:30:55+00:00">Tháng Tư 12, 2019</time></span>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-4 post-grid">
+										<div class="thumb">
+											<a href="#" title="Phân biệt 4G nhà mạng nào rẻ nhất 2019">
+												<img src="images/post12.png" alt="Phân biệt 4G nhà mạng nào rẻ nhất 2019">
+											</a>
+										</div>
+										<div class="detail">
+											<h3 class="title"><a href="#">Phân biệt 4G nhà mạng nào rẻ nhất 2019</a></h3>
+											<div class="meta">
+												<span><time class="entry-date published" datetime="2019-04-12T14:30:55+00:00">Tháng Tư 12, 2019</time></span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+						<div class="page--right col-lg-4">
+
+							<!-- panel -->
+							<div class="panel panel-orange">
+								<div class="panel-header">SIM THEO GIÁ</div>
+								<div class="panel-content">
+									<ul class="sitebar-list">
+										<li><a href="danh-muc.html">Dưới 500 nghìn</a></li>
+										<li><a href="danh-muc.html">Sim 500 - 1 triệu</a></li>
+										<li><a href="danh-muc.html">Sim 1 - 3 triệu</a></li>
+										<li><a href="danh-muc.html">Sim 3 - 5 triệu</a></li>
+										<li><a href="danh-muc.html">Sim 5 - 10 triệu</a></li>
+										<li><a href="danh-muc.html">Sim 10 - 50 triệu</a></li>
+										<li><a href="danh-muc.html">Sim 50 - 100 triệu</a></li>
+										<li><a href="danh-muc.html">Sim 100 - 200 triệu</a></li>
+										<li><a href="danh-muc.html">Sim trên 200 triệu</a></li>
+									</ul>
+								</div>
+							</div>
+							
+							<!-- panel -->
+							<div class="panel panel-orange">
+								<div class="panel-header">SIM THEO MẠNG</div>
+								<div class="panel-content">
+									<ul class="sitebar-list">
+										<li><a href="danh-muc.html">Sim Viettel</a></li>
+										<li><a href="danh-muc.html">Sim Vinaphone</a></li>
+										<li><a href="danh-muc.html">Sim Mobifone</a></li>
+										<li><a href="danh-muc.html">Sim Vietnamobile</a></li>
+										<li><a href="danh-muc.html">Sim Gmobile</a></li>
+										<li><a href="danh-muc.html">Sim Itelecom</a></li>
+									</ul>
+								</div>
+							</div>
+
+							<!-- panel -->
+							<div class="panel panel-orange">
+								<div class="panel-header">SIM THEO LOẠI</div>
+								<div class="panel-content">
+									<ul class="sitebar-list">
+										<li><a href="danh-muc.html">Sim VIP</a></li>
+										<li><a href="danh-muc.html">Sim Lục quý</a></li>
+										<li><a href="danh-muc.html">Sim Lục quý giữa</a></li>
+										<li><a href="danh-muc.html">Sim ngũ quý</a></li>
+										<li><a href="danh-muc.html">Sim ngũ quý giữa</a></li>
+										<li><a href="danh-muc.html">Sim Tứ quý</a></li>
+										<li><a href="danh-muc.html">Sim tứ quý giữa</a></li>
+										<li><a href="danh-muc.html">Sim Tam hoa</a></li>
+										<li><a href="danh-muc.html">Sim tam hoa kép</a></li>
+										<li><a href="danh-muc.html">Sim Taxi</a></li>
+										<li><a href="danh-muc.html">Sim Lộc phát</a></li>
+										<li><a href="danh-muc.html">Sim Thần tài</a></li>
+										<li><a href="danh-muc.html">Sim Ông địa</a></li>
+										<li><a href="danh-muc.html">Sim Lặp kép</a></li>
+										<li><a href="danh-muc.html">Sim Gánh đảo</a></li>
+										<li><a href="danh-muc.html">Sim Tiến lên</a></li>
+										<li><a href="danh-muc.html">Sim Dễ nhớ</a></li>
+										<li><a href="danh-muc.html">Sim Năm sinh</a></li>
+										<li><a href="danh-muc.html">Sim Số độc</a></li>
+										<li><a href="danh-muc.html">Sim đầu số cổ</a></li>
+										<li><a href="danh-muc.html">Sim Tự chọn</a></li>
+										<li><a href="danh-muc.html">Sim Trả góp</a></li>
+									</ul>
+								</div>
+							</div>
+							<!-- widget -->
+							<div class="widget">
+								<div class="widget--head">
+									<h4 class="title">bài viết mới </h4>
+								</div>
+								<div class="post-sm-item">
+									<div class="thumb">
+										<a href="noi-dung.html" title="Vì sao người thành đạt luôn thích dùng sim chứa nhiều số 9?">
+											<img src="images/post13.png" alt="Vì sao người thành đạt luôn thích dùng sim chứa nhiều số 9?">
+										</a>
+									</div>
+									<div class="detail">
+										<h3 class="title"><a href="noi-dung.html">Vì sao người thành đạt luôn thích dùng sim chứa nhiều số 9?</a></h3>
+										<div class="meta">
+											<span><time class="entry-date published" datetime="2019-04-12T14:30:55+00:00">Tháng Tư 12, 2019</time></span>
+										</div>
+									</div>
+								</div>
+								<div class="post-sm-item">
+									<div class="thumb">
+										<a href="noi-dung.html" title="Mạng 4G Mobifone không vào được – Phải làm sao?">
+											<img src="images/news1.png" alt="Mạng 4G Mobifone không vào được – Phải làm sao?">
+										</a>
+									</div>
+									<div class="detail">
+										<h3 class="title"><a href="noi-dung.html">Mạng 4G Mobifone không vào được – Phải làm sao?</a></h3>
+										<div class="meta">
+											<span><time class="entry-date published" datetime="2019-04-12T14:30:55+00:00">Tháng Tư 12, 2019</time></span>
+										</div>
+									</div>
+								</div>
+								<div class="post-sm-item">
+									<div class="thumb">
+										<a href="noi-dung.html" title="Bạn đã biết cách mua thêm dung lượng 4G Viettel cho mình chưa?">
+											<img src="images/post7.png" alt="Bạn đã biết cách mua thêm dung lượng 4G Viettel cho mình chưa?">
+										</a>
+									</div>
+									<div class="detail">
+										<h3 class="title"><a href="noi-dung.html">Bạn đã biết cách mua thêm dung lượng 4G Viettel cho mình chưa?</a></h3>
+										<div class="meta">
+											<span><time class="entry-date published" datetime="2019-04-12T14:30:55+00:00">Tháng Tư 12, 2019</time></span>
+										</div>
+									</div>
+								</div>
+								<div class="post-sm-item">
+									<div class="thumb">
+										<a href="noi-dung.html" title="Dòng sim nào khiến “giới sành chơi sim” chao đảo năm 2019">
+											<img src="images/news3.png" alt="Dòng sim nào khiến “giới sành chơi sim” chao đảo năm 2019">
+										</a>
+									</div>
+									<div class="detail">
+										<h3 class="title"><a href="noi-dung.html">Dòng sim nào khiến “giới sành chơi sim” chao đảo năm 2019</a></h3>
+										<div class="meta">
+											<span><time class="entry-date published" datetime="2019-04-12T14:30:55+00:00">Tháng Tư 12, 2019</time></span>
+										</div>
+									</div>
+								</div>
+								<div class="post-sm-item">
+									<div class="thumb">
+										<a href="noi-dung.html" title="Lợi ích thực sự từ những gói cước khuyến mãi của các nhà mạng">
+											<img src="images/post8.png" alt="Lợi ích thực sự từ những gói cước khuyến mãi của các nhà mạng">
+										</a>
+									</div>
+									<div class="detail">
+										<h3 class="title"><a href="noi-dung.html">Lợi ích thực sự từ những gói cước khuyến mãi của các nhà mạng</a></h3>
+										<div class="meta">
+											<span><time class="entry-date published" datetime="2019-04-12T14:30:55+00:00">Tháng Tư 12, 2019</time></span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- tabs -->
+							<div class="toggle">
+								<ul class="tabs">
+									<li class="active"><a class="tab" href="#tab1">Populars</a></li>
+									<li><a class="tab" href="#tab2">Comments</a></li>
+								</ul>
+								<div class='tabs-contents'>
+									<div class='tabs-content active' id="tab1">
+										
+										<div class="post-sm-item">
+											<div class="thumb">
+												<a href="noi-dung.html" title="Vì sao người thành đạt luôn thích dùng sim chứa nhiều số 9?">
+													<img src="images/post13.png" alt="Vì sao người thành đạt luôn thích dùng sim chứa nhiều số 9?">
+												</a>
+											</div>
+											<div class="detail">
+												<h3 class="title"><a href="noi-dung.html">Vì sao người thành đạt luôn thích dùng sim chứa nhiều số 9?</a></h3>
+												<div class="meta">
+													<span><time class="entry-date published" datetime="2019-04-12T14:30:55+00:00">Tháng Tư 12, 2019</time></span>
+												</div>
+											</div>
+										</div>
+										<div class="post-sm-item">
+											<div class="thumb">
+												<a href="noi-dung.html" title="Mạng 4G Mobifone không vào được – Phải làm sao?">
+													<img src="images/news1.png" alt="Mạng 4G Mobifone không vào được – Phải làm sao?">
+												</a>
+											</div>
+											<div class="detail">
+												<h3 class="title"><a href="noi-dung.html">Mạng 4G Mobifone không vào được – Phải làm sao?</a></h3>
+												<div class="meta">
+													<span><time class="entry-date published" datetime="2019-04-12T14:30:55+00:00">Tháng Tư 12, 2019</time></span>
+												</div>
+											</div>
+										</div>
+										<div class="post-sm-item">
+											<div class="thumb">
+												<a href="noi-dung.html" title="Bạn đã biết cách mua thêm dung lượng 4G Viettel cho mình chưa?">
+													<img src="images/post7.png" alt="Bạn đã biết cách mua thêm dung lượng 4G Viettel cho mình chưa?">
+												</a>
+											</div>
+											<div class="detail">
+												<h3 class="title"><a href="noi-dung.html">Bạn đã biết cách mua thêm dung lượng 4G Viettel cho mình chưa?</a></h3>
+												<div class="meta">
+													<span><time class="entry-date published" datetime="2019-04-12T14:30:55+00:00">Tháng Tư 12, 2019</time></span>
+												</div>
+											</div>
+										</div>
+										<div class="post-sm-item">
+											<div class="thumb">
+												<a href="noi-dung.html" title="Dòng sim nào khiến “giới sành chơi sim” chao đảo năm 2019">
+													<img src="images/news3.png" alt="Dòng sim nào khiến “giới sành chơi sim” chao đảo năm 2019">
+												</a>
+											</div>
+											<div class="detail">
+												<h3 class="title"><a href="noi-dung.html">Dòng sim nào khiến “giới sành chơi sim” chao đảo năm 2019</a></h3>
+												<div class="meta">
+													<span><time class="entry-date published" datetime="2019-04-12T14:30:55+00:00">Tháng Tư 12, 2019</time></span>
+												</div>
+											</div>
+										</div>
+										<div class="post-sm-item">
+											<div class="thumb">
+												<a href="noi-dung.html" title="Lợi ích thực sự từ những gói cước khuyến mãi của các nhà mạng">
+													<img src="images/post8.png" alt="Lợi ích thực sự từ những gói cước khuyến mãi của các nhà mạng">
+												</a>
+											</div>
+											<div class="detail">
+												<h3 class="title"><a href="noi-dung.html">Lợi ích thực sự từ những gói cước khuyến mãi của các nhà mạng</a></h3>
+												<div class="meta">
+													<span><time class="entry-date published" datetime="2019-04-12T14:30:55+00:00">Tháng Tư 12, 2019</time></span>
+												</div>
+											</div>
+										</div>
+										
+									</div>
+									<div class='tabs-content' id="tab2">
+										<div class="comment">
+											<div class="avatar">
+												<a href="#"><img src="images/avar.png" alt=""></a>
+											</div>
+											<div class="comment-text">
+												<a href="#">
+													<span class="cmt-post">Thế nào là sim số đẹp? Những lợi ích mà sim số đẹp mang lại</span>
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- widget -->
+							<div class="widget">
+								<div class="widget--head">
+									<h4 class="title">tin hot </h4>
+								</div>
+								<div class="post-sm-item">
+									<div class="thumb">
+										<a href="#" title="Vì sao người thành đạt luôn thích dùng sim chứa nhiều số 9?">
+											<img src="images/post13.png" alt="Vì sao người thành đạt luôn thích dùng sim chứa nhiều số 9?">
+										</a>
+									</div>
+									<div class="detail">
+										<h3 class="title"><a href="#">Vì sao người thành đạt luôn thích dùng sim chứa nhiều số 9?</a></h3>
+										<div class="meta">
+											<span><time class="entry-date published" datetime="2019-04-12T14:30:55+00:00">Tháng Tư 12, 2019</time></span>
+										</div>
+									</div>
+								</div>
+								<div class="post-sm-item">
+									<div class="thumb">
+										<a href="#" title="Mạng 4G Mobifone không vào được – Phải làm sao?">
+											<img src="images/news1.png" alt="Mạng 4G Mobifone không vào được – Phải làm sao?">
+										</a>
+									</div>
+									<div class="detail">
+										<h3 class="title"><a href="#">Mạng 4G Mobifone không vào được – Phải làm sao?</a></h3>
+										<div class="meta">
+											<span><time class="entry-date published" datetime="2019-04-12T14:30:55+00:00">Tháng Tư 12, 2019</time></span>
+										</div>
+									</div>
+								</div>
+								<div class="post-sm-item">
+									<div class="thumb">
+										<a href="#" title="Bạn đã biết cách mua thêm dung lượng 4G Viettel cho mình chưa?">
+											<img src="images/post7.png" alt="Bạn đã biết cách mua thêm dung lượng 4G Viettel cho mình chưa?">
+										</a>
+									</div>
+									<div class="detail">
+										<h3 class="title"><a href="#">Bạn đã biết cách mua thêm dung lượng 4G Viettel cho mình chưa?</a></h3>
+										<div class="meta">
+											<span><time class="entry-date published" datetime="2019-04-12T14:30:55+00:00">Tháng Tư 12, 2019</time></span>
+										</div>
+									</div>
+								</div>
+								<div class="post-sm-item">
+									<div class="thumb">
+										<a href="#" title="Dòng sim nào khiến “giới sành chơi sim” chao đảo năm 2019">
+											<img src="images/news3.png" alt="Dòng sim nào khiến “giới sành chơi sim” chao đảo năm 2019">
+										</a>
+									</div>
+									<div class="detail">
+										<h3 class="title"><a href="#">Dòng sim nào khiến “giới sành chơi sim” chao đảo năm 2019</a></h3>
+										<div class="meta">
+											<span><time class="entry-date published" datetime="2019-04-12T14:30:55+00:00">Tháng Tư 12, 2019</time></span>
+										</div>
+									</div>
+								</div>
+								<div class="post-sm-item">
+									<div class="thumb">
+										<a href="#" title="Lợi ích thực sự từ những gói cước khuyến mãi của các nhà mạng">
+											<img src="images/post8.png" alt="Lợi ích thực sự từ những gói cước khuyến mãi của các nhà mạng">
+										</a>
+									</div>
+									<div class="detail">
+										<h3 class="title"><a href="#">Lợi ích thực sự từ những gói cước khuyến mãi của các nhà mạng</a></h3>
+										<div class="meta">
+											<span><time class="entry-date published" datetime="2019-04-12T14:30:55+00:00">Tháng Tư 12, 2019</time></span>
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- #main-content -->
+	<footer class="footer">
+		<div class="container">
+			<div class="row row-f">
+				<div class="col-lg-4">
+					<div class="hotline text-right" id="hotline">
+						<p class="title">Hotline tư vấn</p>
+						<a href="tel:0988586699">098.858.6699</a>
+					</div>
+					<div class="cp">
+						<h1 class="title">TOP SIM VIỆT NAM - TOPSIM.vn</h1>
+						<div class="cp-description">
+							<p>
+								TOP SIM VIỆT NAM là thương hiệu bán sim số đẹp với trụ sở chính tại Hưng Yên và cơ sở trên toàn quốc. Website chính thức là TOPSIM.vn Phone: 098.858.6699
+							</p>
+						</div>
+					</div>
+					<div class="social">
+						<a href="#" target="_blank" class="facebook" rel="nofollow"><i class="fa fa-facebook"></i></a>
+						<a href="#" target="_blank" class="twitter" rel="nofollow"><i class="fa fa-twitter"></i></a>
+						<a href="#" target="_blank" class="instagram" rel="nofollow"><i class="fa fa-instagram"></i></a>
+						<a href="#" target="_blank" class="pinterest" rel="nofollow"><i class="fa fa-pinterest"></i></a>
+					</div>
+					<a href="#" target="_blank">
+						<img src="images/dmca-badge.png" alt="">
+					</a>
+					<p class="copyright">
+						Copyright 2018 © TOP SIM
+					</p>
+				</div>
+				<div class="col-lg-8">
+					<div class="list-company row">
+						<div class="list-company--item col-xs-12 col-md-6">
+							<p class="title">Hà Nội</p>
+							<div class="info">
+								<p><i class="fa fa-map-marker"></i> 55B Ô Chợ Dừa, Q.Đống Đa.</p>
+								<p><i class="fa fa-map-marker"></i> 84 Nguyễn Chí Thanh, Q.Đống Đa.</p>
+								<p><i class="fa fa-map-marker"></i> 222 Nguyễn Văn Cừ, Q.Long Biên.</p>
+							</div>
+						</div>
+						<div class="list-company--item col-xs-12 col-md-6">
+							<p class="title">Hồ Chí Minh</p>
+							<div class="info">
+								<p><i class="fa fa-map-marker"></i> 538 Nguyễn Thị Minh Khai, P2, Quận 3.</p>
+								<p><i class="fa fa-map-marker"></i> Số 49B Trần Hưng Đạo , Phường 6 , Quận 5.</p>
+								<p><i class="fa fa-map-marker"></i> Số 84 Trương Vĩnh Ký , Phường Tân Thành , Quận Tân Phú.</p>
+							</div>
+						</div>
+						<div class="list-company--item col-xs-12 col-md-6">
+							<p class="title">Đà Nẵng</p>
+							<div class="info">
+								<p><i class="fa fa-map-marker"></i> 301 Nguyễn Văn Linh, Q.Thanh Khê.</p>
+							</div>
+						</div>
+						<div class="list-company--item col-xs-12 col-md-6">
+							<p class="title">Bắc Ninh</p>
+							<div class="info">
+								<p><i class="fa fa-map-marker"></i> 69 Trần Hưng Đạo, P.Tiền An.</p>
+							</div>
+						</div>
+						<div class="list-company--item col-xs-12 col-md-6">
+							<p class="title">Hải Dương</p>
+							<div class="info">
+								<p><i class="fa fa-map-marker"></i> 32 Trần Hưng Đạo, TP.Hải Dương.</p>
+							</div>
+						</div>
+						<div class="list-company--item col-xs-12 col-md-6">
+							<p class="title">Tuyên Quang</p>
+							<div class="info">
+								<p><i class="fa fa-map-marker"></i> 257 Quang Trung, P.Phan Thiết, TP.Tuyên Quang.</p>
+							</div>
+						</div>
+						<div class="list-company--item col-xs-12 col-md-6">
+							<p class="title">Hưng Yên</p>
+							<div class="info">
+								<p><i class="fa fa-map-marker"></i> Số 76 - 78 Tòa nhà BIDV, vòng xuyến Văn Giang, TT Văn Giang</p>
+							</div>
+						</div>
+						<div class="list-company--item col-xs-12 col-md-6">
+							<p class="title">Lạng Sơn</p>
+							<div class="info">
+								<p><i class="fa fa-map-marker"></i> 54 Lê Lợi, Vĩnh Trại, TP.Lạng Sơn.</p>
+							</div>
+						</div>
+					</div>
+				</div>	
+			</div>
+		</div>
+	</footer>
+	<!-- banner left right -->
+	<div id="banner1" class="banner" style="top: 100px">
+		<img src="images/banner01.png" alt="">
+	</div>
+	<div id="banner2" class="banner" style="top: 100px">
+		<img src="images/banner02.png" alt="">
+	</div>
+	<div class="hotline-btn">
+		<a href="tel:0909999999">0909999999
+			<div id="phone">
+				<span></span>
+			</div>
+			<div></div>
+		</a>
+	</div>
+</body>
+</html>
